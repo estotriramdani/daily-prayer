@@ -189,6 +189,11 @@ select option {
   }
 }
 
+@font-face {
+  font-family: arabicfont;
+  src: url("../fonts/LPMQ.ttf");
+}
+
 .splash-wrapper {
   height: 100%;
   background-color: #00afb9;
@@ -588,7 +593,7 @@ select option {
 }
 
 .hadis-wrapper .content-hadith .item-wrapper .item .arabic p {
-  font-family: "Scheherazade", serif;
+  font-family: arabicfont;
   font-size: 20px;
   text-align: right;
   line-height: 30px;
@@ -791,10 +796,10 @@ select option {
 }
 
 .detail-quran-wrapper .item-wrapper .item .arabic {
-  font-family: "Scheherazade", serif;
+  font-family: arabicfont;
   text-align: right;
   color: #212529;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
 }
 
