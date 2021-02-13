@@ -24,7 +24,6 @@
 
 .container {
   background-color: $bgwhite;
-  padding-bottom: 80px;
 }
 
 input {
@@ -135,7 +134,8 @@ select {
   .item {
     margin-top: -5px;
     width: 90px;
-    a {
+    span {
+      cursor: pointer;
       color: $white;
       text-decoration: none;
       display: block;

@@ -2,6 +2,7 @@
   background-color: $bgwhite;
   min-height: 100vh;
   position: relative;
+  padding-bottom: 80px;
   .header {
     position: sticky;
     position: -webkit-sticky;
@@ -31,8 +32,10 @@
     .is-you {
       text-align: right;
       font-size: 13px;
-      a {
+      span {
         color: $green;
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
   }
@@ -96,7 +99,7 @@
   &:hover {
     .btn-reference {
       border: 1px solid $white;
-      a {
+      span {
         color: $white;
       }
     }
@@ -119,12 +122,13 @@
     &:hover {
       box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
     }
-    a {
+    span {
       display: block;
       text-decoration: none;
       color: $green;
       line-height: 40px;
       transition: 0.1s;
+      cursor: pointer;
       &:hover {
         // color: $bgwhite;
         font-weight: 500;

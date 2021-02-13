@@ -1,4 +1,11 @@
 .hadis-wrapper {
+  .limit {
+    padding: 15px;
+    input {
+      background-color: $white;
+    }
+  }
+  padding-bottom: 80px;
   .search-box {
     padding-top: 10px;
     display: flex;

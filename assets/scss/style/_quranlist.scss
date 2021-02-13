@@ -1,4 +1,6 @@
 .quran-wrapper {
+  padding-bottom: 80px;
+  min-height: 100vh;
   .search-box {
     padding-top: 10px;
     display: flex;
@@ -42,7 +44,8 @@
     margin-top: 26px;
     padding: 0 15px;
     font-family: "Mukta", sans-serif;
-    a {
+    span {
+      cursor: pointer;
       text-decoration: none;
       .item {
         margin-bottom: 10px;
