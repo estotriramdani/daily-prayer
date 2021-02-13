@@ -74,11 +74,40 @@
       }
     }
   }
+
+  .jump-verse {
+    box-shadow: -5px 0 16px rgba(0, 0, 0, 0.07);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 375px;
+    margin: auto;
+    height: 70px;
+    background-color: $green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    input {
+      background-color: white;
+      width: 300px;
+      height: 40px;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
   .detail-quran-wrapper {
     .header-detail {
+      width: 100%;
+    }
+    .jump-verse {
       width: 100%;
     }
   }
