@@ -68,16 +68,19 @@
         .arabic {
           color: $dark;
           margin-bottom: 12px;
+          height: 300px;
+          overflow: auto;
           p {
+            padding-right: 10px;
             font-family: arabicfont;
             font-size: 20px;
             text-align: right;
-            line-height: 30px;
+            line-height: 35px;
           }
         }
         .translation {
           color: $darker;
-          height: 400px;
+          height: 300px;
           overflow: auto;
           p {
             font-size: 14px;

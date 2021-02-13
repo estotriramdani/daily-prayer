@@ -590,18 +590,21 @@ select option {
 .hadis-wrapper .content-hadith .item-wrapper .item .arabic {
   color: #686d6d;
   margin-bottom: 12px;
+  height: 300px;
+  overflow: auto;
 }
 
 .hadis-wrapper .content-hadith .item-wrapper .item .arabic p {
+  padding-right: 10px;
   font-family: arabicfont;
   font-size: 20px;
   text-align: right;
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .hadis-wrapper .content-hadith .item-wrapper .item .translation {
   color: #212529;
-  height: 400px;
+  height: 300px;
   overflow: auto;
 }
 
