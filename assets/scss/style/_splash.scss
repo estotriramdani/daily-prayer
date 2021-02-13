@@ -1,0 +1,22 @@
+.splash-wrapper {
+  height: 100%;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title-splash {
+    margin-top: -40px;
+    color: $white;
+    font-family: "Mukta", sans-serif;
+    text-align: center;
+    h1 {
+      font-size: 63px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 21px;
+      font-weight: 400;
+    }
+  }
+}

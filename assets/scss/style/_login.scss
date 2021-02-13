@@ -1,0 +1,88 @@
+.login-wrapper {
+  min-height: 100vh;
+  background-color: $green;
+  font-family: "Mukta", sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .footer-login {
+    position: absolute;
+    bottom: 90px;
+    color: $white;
+    text-align: center;
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      margin-top: 10px;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.login-box {
+  margin-top: -100px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.05);
+  input,
+  select,
+  button {
+    transition: 0.2s;
+    display: block;
+    &:focus {
+      border: 1px solid $green;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+  select {
+    option {
+      &:hover {
+        background-color: $green !important;
+      }
+    }
+  }
+}
+
+.login-box {
+  padding: 30px 41px;
+  background-color: $white;
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $green;
+  }
+  p {
+    font-size: 15px;
+    color: $green;
+    margin-bottom: 17px;
+    margin-top: 10px;
+  }
+
+  .form-control {
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 5px 33px;
+    background-color: $green;
+    color: $white;
+    border: 1px solid $green;
+    border-radius: 5px;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    &:hover,
+    &:active {
+      color: $green;
+      background-color: $white;
+    }
+  }
+}
