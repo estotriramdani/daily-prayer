@@ -1,0 +1,77 @@
+.quran-wrapper {
+  .search-box {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 50;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    input {
+      width: 300px;
+      // width: 80%;
+      display: inline-block;
+      background-color: $white;
+      height: 42px;
+      box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.05);
+      &:focus {
+        outline: $green !important;
+        border: 1px solid $green;
+      }
+    }
+    .search-button {
+      height: 42px;
+      width: 42px;
+      background-color: $green;
+      color: $white;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.05);
+      &:hover {
+        color: $green;
+        background-color: $white;
+      }
+    }
+  }
+
+  .item-wrapper {
+    margin-top: 26px;
+    padding: 0 15px;
+    font-family: "Mukta", sans-serif;
+    a {
+      text-decoration: none;
+      .item {
+        margin-bottom: 10px;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: $white;
+        color: $green;
+        height: 41px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.04);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        &:hover {
+          background-color: $green;
+          color: $white;
+        }
+        p {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-box {
+    input {
+      width: 82vw !important;
+    }
+  }
+}

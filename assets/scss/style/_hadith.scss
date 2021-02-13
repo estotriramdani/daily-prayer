@@ -1,0 +1,101 @@
+.hadis-wrapper {
+  .search-box {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 50;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    input {
+      width: 300px;
+      // width: 80%;
+      display: inline-block;
+      background-color: $white;
+      height: 42px;
+      box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.05);
+      &:focus {
+        outline: $green !important;
+        border: 1px solid $green;
+      }
+    }
+    .search-button {
+      height: 42px;
+      width: 42px;
+      background-color: $green;
+      color: $white;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.05);
+      &:hover {
+        color: $green;
+        background-color: $white;
+      }
+    }
+  }
+
+  .content-hadith {
+    margin-top: 20px;
+    h1 {
+      // font-family: "Scheherazade", serif;
+      font-family: "Mukta", sans-serif;
+      color: $darker;
+      font-size: 18px;
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+    .item-wrapper {
+      padding: 0 15px;
+      .item {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: $white;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+        font-family: "Mukta", sans-serif;
+        line-height: 24px;
+        .title {
+          margin-bottom: 12px;
+          color: $green;
+          h2 {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .arabic {
+          color: $dark;
+          margin-bottom: 12px;
+          p {
+            font-family: "Scheherazade", serif;
+            font-size: 20px;
+            text-align: right;
+            line-height: 30px;
+          }
+        }
+        .translation {
+          color: $darker;
+          height: 400px;
+          overflow: auto;
+          p {
+            font-size: 14px;
+            span {
+              color: $green;
+              font-weight: 600;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .search-box {
+    input {
+      width: 82vw !important;
+    }
+  }
+}
