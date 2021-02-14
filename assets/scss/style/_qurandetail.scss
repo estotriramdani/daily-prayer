@@ -6,6 +6,8 @@
     display: flex;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
+    z-index: 50;
     width: 375px;
     background-color: $green;
     justify-content: space-between;
@@ -21,6 +23,10 @@
     }
     .icon {
       font-size: 30px;
+      cursor: pointer;
+      &:hover {
+        color: $dark;
+      }
     }
     .surah {
       font-family: "Mukta", sans-serif;
@@ -98,6 +104,7 @@
       height: 40px;
       border: none;
       border-radius: 5px;
+      cursor: pointer;
     }
   }
 }

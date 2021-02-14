@@ -24,6 +24,7 @@
   overflow: auto;
   -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
 }
 
 .container {
@@ -752,6 +753,8 @@ select option {
   display: flex;
   position: sticky;
   position: -webkit-sticky;
+  top: 0;
+  z-index: 50;
   width: 375px;
   background-color: #00afb9;
   -webkit-box-pack: justify;
@@ -776,6 +779,11 @@ select option {
 
 .detail-quran-wrapper .header-detail .icon {
   font-size: 30px;
+  cursor: pointer;
+}
+
+.detail-quran-wrapper .header-detail .icon:hover {
+  color: #686d6d;
 }
 
 .detail-quran-wrapper .header-detail .surah {
@@ -871,6 +879,7 @@ select option {
   height: 40px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
